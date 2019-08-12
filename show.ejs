@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="head">
+<% for (i = blogpost.length - 1; i >= 0; i--) { %>
+    <div id="titl">
+<h1><strong></strong><%=blogpost[i].title%></strong></h1>
+    </div>
+
+    <div id="image">
+<img src="<%=blogpost[i].image%>" id="img">
+    </div>
+    <div id="con">
+<p id="content"><%=blogpost[i].content%></p>
+    </div>
+<%}%>
+</div>
+
+
+
+    </body>
+    </html>

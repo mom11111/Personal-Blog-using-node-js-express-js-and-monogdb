@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="/post/edit" method="POST">
+<% for (i = blogpost.length - 1; i >= 0; i--) { %>
+    <label for="username">Username:</label><br>
+    <input type="text" name="title" value="<%=blogpost[i].title%>">
+<br>
+<label for="image">Your url:</label> <br>
+<input type="text" name="image" id="username" value="<%=blogpost[i].image%>"><br>
+    <label for="username">Your Content:</label> <br>
+    <input type="text" name="content" id="username" value="<%=blogpost[i].content%>">
+    <input type="submit" value="update post">
+<%}%>
+</div>
+
+    </form>
+
+    </body>
+    </html>
